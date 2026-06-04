@@ -1,0 +1,285 @@
+/* ============================================================
+   PAYMENT PAGE — CSS MODULE
+   ============================================================ */
+
+.page { background: var(--navy); color: var(--white); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+
+/* ── TOP BAR ── */
+.topBar {
+  padding: 90px 60px 40px;
+  background: linear-gradient(160deg, #0a0f1e, #111827);
+  border-bottom: 1px solid var(--border);
+}
+
+.topBarInner { max-width: 960px; margin: 0 auto; }
+
+.breadcrumb {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.78rem; color: var(--muted); margin-bottom: 20px;
+}
+
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--gold); }
+.breadcrumb span { color: var(--gold); }
+
+.pageTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 300; margin-bottom: 6px;
+}
+
+.pageTitle em { font-style: italic; color: var(--gold-light); }
+.pageSub { font-size: 0.88rem; color: var(--muted); }
+
+/* ── BODY ── */
+.body { display: grid; grid-template-columns: 1fr 340px; gap: 28px; padding: 40px 60px; max-width: 1160px; margin: 0 auto; }
+
+/* ── PAYMENT CARD ── */
+.payCard {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden; margin-bottom: 20px;
+}
+
+.payCardHeader {
+  padding: 18px 24px; border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+.payCardTitle { font-size: 0.9rem; font-weight: 500; color: var(--white); }
+.payCardBody { padding: 24px; }
+
+/* ── GATEWAY TABS ── */
+.gatewayGrid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 28px;
+}
+
+.gatewayBtn {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px; padding: 14px 10px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  cursor: pointer; transition: var(--transition);
+}
+
+.gatewayBtn:hover { border-color: rgba(201,168,76,0.3); }
+
+.gatewayBtnActive {
+  background: rgba(201,168,76,0.08); border-color: rgba(201,168,76,0.45);
+}
+
+.gatewayIcon { font-size: 1.4rem; }
+.gatewayLabel { font-size: 0.72rem; color: var(--muted); text-align: center; }
+.gatewayLabelActive { color: var(--gold-light); }
+
+/* ── CARD FORM ── */
+.cardForm { display: flex; flex-direction: column; gap: 16px; }
+
+.field { display: flex; flex-direction: column; gap: 7px; }
+.fieldRow { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.fieldRowThree { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; }
+
+.fieldLabel { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+
+.fieldInput {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px; padding: 14px 16px; color: var(--white);
+  font-family: 'DM Mono', monospace; font-size: 0.9rem; outline: none; transition: var(--transition);
+}
+
+.fieldInput::placeholder { color: var(--muted); font-family: 'DM Sans', sans-serif; }
+.fieldInput:focus { border-color: var(--gold); background: rgba(201,168,76,0.04); }
+
+/* Card visual */
+.cardVisual {
+  background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9f 60%, #c9a84c 100%);
+  border-radius: 14px; padding: 24px; margin-bottom: 24px;
+  position: relative; overflow: hidden; height: 160px;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+
+.cardVisualBg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 80% at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 60%);
+}
+
+.cardChip { font-size: 1.6rem; position: relative; z-index: 1; }
+
+.cardNum {
+  font-family: 'DM Mono', monospace; font-size: 1.1rem; letter-spacing: 0.2em;
+  color: rgba(255,255,255,0.9); position: relative; z-index: 1;
+}
+
+.cardBottom {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  position: relative; z-index: 1;
+}
+
+.cardHolder { font-size: 0.78rem; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.08em; }
+.cardExpiry { font-size: 0.75rem; color: rgba(255,255,255,0.7); }
+.cardNetwork { font-size: 1.6rem; }
+
+/* ── ALTERNATIVE PAYMENT ── */
+.altPayRow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.altPayBtn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px; padding: 14px;
+  font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: var(--white);
+  cursor: pointer; transition: var(--transition);
+}
+
+.altPayBtn:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); }
+.altPayIcon { font-size: 1.2rem; }
+
+/* ── SECURITY BADGES ── */
+.securityRow {
+  display: flex; align-items: center; justify-content: center;
+  gap: 24px; padding: 16px; flex-wrap: wrap;
+}
+
+.secBadge {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.75rem; color: var(--muted);
+}
+
+/* ── SIDEBAR ORDER SUMMARY ── */
+.sidebar { display: flex; flex-direction: column; gap: 20px; }
+
+.orderCard {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden; position: sticky; top: 88px;
+}
+
+.orderTop {
+  padding: 20px; border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.orderTitle { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 14px; }
+
+.orderFlight {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px; padding: 14px; margin-bottom: 14px;
+}
+
+.orderRoute {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;
+}
+
+.orderRouteText { font-size: 1rem; font-weight: 500; color: var(--white); }
+.orderFlightNum { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--gold); }
+
+.orderMeta { font-size: 0.78rem; color: var(--muted); display: flex; flex-direction: column; gap: 3px; }
+
+.orderBody { padding: 16px 20px; }
+
+.orderRow {
+  display: flex; justify-content: space-between; padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 0.83rem;
+}
+
+.orderRow:last-of-type { border-bottom: none; }
+.orderLabel { color: var(--muted); }
+.orderValue { color: var(--white); font-family: 'DM Mono', monospace; font-size: 0.8rem; }
+
+.orderDivider { height: 1px; background: var(--border); margin: 8px 0; }
+
+.orderTotal {
+  display: flex; justify-content: space-between; padding: 8px 0; align-items: center;
+}
+
+.orderTotalLabel { font-size: 0.92rem; font-weight: 500; color: var(--white); }
+.orderTotalValue {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 600; color: var(--gold-light);
+}
+
+.orderFooter { padding: 0 20px 20px; }
+
+.btnPay {
+  display: block; width: 100%; padding: 16px; text-align: center;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  border: none; border-radius: 10px; color: var(--navy);
+  font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600;
+  cursor: pointer; transition: var(--transition); margin-bottom: 10px;
+}
+
+.btnPay:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(201,168,76,0.45); }
+.btnPay:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+.spinner {
+  display: inline-block; width: 16px; height: 16px;
+  border: 2px solid rgba(10,15,30,0.3); border-top-color: var(--navy);
+  border-radius: 50%; animation: spin 0.7s linear infinite; margin-right: 8px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.payNote { font-size: 0.75rem; color: var(--muted); text-align: center; line-height: 1.5; }
+
+/* ── SUCCESS STATE ── */
+.successPage {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 70vh; text-align: center; padding: 60px 20px;
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+
+.successCircle {
+  width: 90px; height: 90px; border-radius: 50%;
+  background: rgba(34,197,94,0.12); border: 2px solid rgba(34,197,94,0.4);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem; margin-bottom: 28px;
+  animation: pop 0.5s 0.3s ease both;
+}
+
+@keyframes pop { from { transform:scale(0.5); opacity:0; } to { transform:scale(1); opacity:1; } }
+
+.successTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem; font-weight: 300; color: var(--white); margin-bottom: 12px;
+}
+
+.successTitle em { font-style: italic; color: var(--gold-light); }
+.successSub { font-size: 0.95rem; color: var(--muted); line-height: 1.7; max-width: 480px; margin-bottom: 32px; }
+
+.successRef {
+  font-family: 'DM Mono', monospace; font-size: 1.1rem;
+  color: var(--gold); background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.2); padding: 10px 24px; border-radius: 10px; margin-bottom: 32px;
+}
+
+.successActions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+
+.btnGold {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  border: none; color: var(--navy); padding: 13px 26px; border-radius: 10px;
+  font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 600;
+  cursor: pointer; transition: var(--transition); text-decoration: none;
+}
+
+.btnGold:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(201,168,76,0.4); }
+
+.btnGhost {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; border: 1px solid var(--border); color: var(--white);
+  padding: 13px 26px; border-radius: 10px; font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem; cursor: pointer; transition: var(--transition); text-decoration: none;
+}
+
+.btnGhost:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .topBar { padding: 90px 32px 36px; }
+  .body { grid-template-columns: 1fr; padding: 32px 32px; }
+  .gatewayGrid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .topBar { padding: 90px 20px 28px; }
+  .body { padding: 24px 20px; }
+  .gatewayGrid { grid-template-columns: repeat(2, 1fr); }
+  .fieldRow, .fieldRowThree { grid-template-columns: 1fr; }
+  .altPayRow { grid-template-columns: 1fr; }
+}
