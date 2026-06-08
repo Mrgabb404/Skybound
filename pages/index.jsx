@@ -69,7 +69,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Skybound — Luxury Flight Booking</title>
+        <title>SnapTrip — Luxury Flight Booking</title>
         <meta name="description" content="Search, compare and book premium flights worldwide." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -85,7 +85,7 @@ export default function Home() {
         <nav className={styles.navbar}>
           <Link href="/" className={styles.logo}>
             <span className={styles.logoIcon}>✦</span>
-            Sky<span>bound</span>
+           Snap<span>Trip</span>
           </Link>
 
           <ul className={styles.navLinks}>
@@ -241,7 +241,7 @@ export default function Home() {
         <section className={`${styles.section} ${styles.featuresBg}`}>
           <div className={styles.sectionHeader}>
             <div>
-              <div className={styles.sectionEyebrow}>Why Skybound</div>
+              <div className={styles.sectionEyebrow}>Why SnapTrip</div>
               <h2 className={styles.sectionTitle}>Everything You Need<br />In One Platform</h2>
             </div>
           </div>
@@ -295,7 +295,7 @@ export default function Home() {
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Ready for Your<br />Next Adventure?</h2>
             <p className={styles.ctaText}>
-              Join over 2 million travellers who trust Skybound for every journey.
+              Join over 2 million travellers who trust Snap Trip for every journey.
               Sign up free and unlock exclusive member fares.
             </p>
             <div className={styles.ctaButtons}>
@@ -315,7 +315,7 @@ export default function Home() {
             <div className={styles.footerBrand}>
               <Link href="/" className={styles.logo} style={{ fontSize: '1.5rem' }}>
                 <span className={styles.logoIcon}>✦</span>
-                Sky<span>bound</span>
+                Snap<span>Trip</span>
               </Link>
               <p className={styles.footerDesc}>
                 Premium flight booking platform connecting travellers to 500+ airlines
@@ -340,7 +340,7 @@ export default function Home() {
           </div>
 
           <div className={styles.footerBottom}>
-            <span>© 2025 Skybound Technologies. All rights reserved.</span>
+            <span>© 2025 Snap Trip Technologies. All rights reserved.</span>
             <span>Privacy Policy · Terms · Cookie Settings</span>
           </div>
         </footer>

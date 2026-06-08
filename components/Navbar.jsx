@@ -28,7 +28,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className={styles.logo}>
           <span className={styles.logoIcon}>✦</span>
-          Sky<span>bound</span>
+          Snap<span>Trip</span>
         </Link>
 
         {/* Desktop links */}

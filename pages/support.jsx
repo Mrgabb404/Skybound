@@ -49,7 +49,7 @@ export default function SupportPage() {
   return (
     <>
       <Head>
-        <title>Support — Skybound</title>
+       Snap<title>Support — Trip</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </Head>

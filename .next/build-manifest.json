@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/yR6ejH9IAfDmrDc7sCqNg/_buildManifest.js",
-    "static/yR6ejH9IAfDmrDc7sCqNg/_ssgManifest.js"
+    "static/xsCYYdPLvu-Y07bF4lNa3/_buildManifest.js",
+    "static/xsCYYdPLvu-Y07bF4lNa3/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -16,7 +16,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/19a04be4aa4586bf.css",
-      "static/chunks/pages/index-e91c8fb87b83cf4f.js"
+      "static/chunks/pages/index-e19f542464f578af.js"
     ],
     "/_app": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -37,7 +37,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/489fd1aa59bc6f56.css",
-      "static/chunks/pages/auth-08602688894cacfb.js"
+      "static/chunks/pages/auth-f2005c1934a51f13.js"
     ],
     "/booking": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -45,7 +45,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/e7cd09fb2c0b3933.css",
-      "static/chunks/pages/booking-aca671974d3cb744.js"
+      "static/chunks/pages/booking-e54745711e8da545.js"
     ],
     "/dashboard": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -61,7 +61,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/48ce9ee8b4d95853.css",
-      "static/chunks/pages/deals-16ce24f089d6a683.js"
+      "static/chunks/pages/deals-fdc9f92ad904dcc4.js"
     ],
     "/flight-details": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -69,7 +69,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/c6b3d4d008de8b7c.css",
-      "static/chunks/pages/flight-details-b3e1c17a35482bf8.js"
+      "static/chunks/pages/flight-details-15e95bebc56a9a01.js"
     ],
     "/flights": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -77,7 +77,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/53fe97db8ce28f9c.css",
-      "static/chunks/pages/flights-981b5bb40ad63791.js"
+      "static/chunks/pages/flights-af90d1bf64193a2e.js"
     ],
     "/my-trips": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -85,7 +85,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/d32937c81314582b.css",
-      "static/chunks/pages/my-trips-a5500a10547caaac.js"
+      "static/chunks/pages/my-trips-c8fff5a8ab95a3a2.js"
     ],
     "/payment": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -93,7 +93,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/0864603edac27192.css",
-      "static/chunks/pages/payment-f847246e7e017fd9.js"
+      "static/chunks/pages/payment-4cd964415ca6c72c.js"
     ],
     "/search-results": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -101,7 +101,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/46924916eefb3869.css",
-      "static/chunks/pages/search-results-ff269c8db8882a14.js"
+      "static/chunks/pages/search-results-ff94fba50237e203.js"
     ],
     "/support": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -109,7 +109,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/463e84c86fcb79cb.css",
-      "static/chunks/pages/support-b81af8a39aec0da0.js"
+      "static/chunks/pages/support-96ccca3b89a38ef6.js"
     ],
     "/track": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -117,7 +117,7 @@
       "static/chunks/main-fc56ac81e639fb5e.js",
       "static/chunks/996-80bd74c565659df8.js",
       "static/css/400b296708e5fbb1.css",
-      "static/chunks/pages/track-fd7fb6c103b3c6d4.js"
+      "static/chunks/pages/track-3cc94602aa2cc802.js"
     ]
   },
   "ampFirstPages": []

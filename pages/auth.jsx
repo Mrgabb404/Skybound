@@ -202,7 +202,7 @@ function RegisterForm({ onSwitch }) {
         <div className={styles.successIcon}>✓</div>
         <h2 className={styles.successTitle}>Account Created!</h2>
         <p className={styles.successText}>
-          Welcome to Skybound. Check your email to verify your account,
+          Welcome to Snap Trip. Check your email to verify your account,
           then sign in to start exploring flights.
         </p>
         <br />
@@ -363,7 +363,7 @@ export default function AuthPage() {
 
             <Link href="/" className={styles.logo}>
               <span className={styles.logoIcon}>✦</span>
-              Sky<span>bound</span>
+              Snap<span>Trip</span>
             </Link>
 
             <div className={styles.leftCenter}>
